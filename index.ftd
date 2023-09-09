@@ -1,45 +1,92 @@
--- import: package/base-layout as layout
--- import: package/header as navbar
--- import: package/toast as toast
--- import: package/lib as lib
--- import: package/button as button
--- import: package/social-buttons as social
+-- import: NEW_EZMED/buttons 
 
-
--- ftd.row:
+-- ftd.column:
 background.solid: #130c39
+;; background.solid: #fff
 width: fill-container
 height: fill-container
 
+;; ------------------------------------------------------------------------------
+
 -- ftd.row:
-;; background.solid: #407bd8
-background.solid: #130c35
-width: fill-container
-height: fill-container
-align-text: top-right
-;; spacing.fixed.px: 400
-padding.px: 10
-;; font-size.px: 22
+spacing.fixed.px: 800
+
+-- ftd.row:
+padding.px: 35
+
 -- ftd.text: EZMED
-color: #eee
-;; style: bold, regular
+region: h1
+color: #407bd8
+;; style: hairline
+
 
 -- end: ftd.row
 
 -- ftd.row:
-background.solid: #130c35
-align-content: right
-spacing.fixed.px: 40
+padding.px: 22
+;; align-content: top-right
+spacing.fixed.px: 30
+color: white
+;; color: skyblue
+
 
 -- ftd.text: Home
-color: #eee
-
--- ftd.text: About
-color: #eee
-
+region: h3
+color: blue
 -- ftd.text: Contact
+region: h3
+-- ftd.text: About
+region: h3
+
+-- end: ftd.row
+-- end: ftd.row
+
+;; --------------------------------------------------------------------------------
+
+
+;; --------------------------------------------------------------------------------
+
+-- ftd.row:
+spacing.fixed.px: 199
+
+-- ftd.row:
+padding-top.px: 180
+padding-left.px: 50
+
+-- ftd.column:
 color: #eee
+spacing.fixed.px: 15
+-- ftd.column:
 
+-- ftd.text: Get instant medical consultation, connecting you with nearby doctors through AI magic.
+style: heavy
+region: h1
+-- end: ftd.column
+-- ftd.column:
+
+-- ftd.text: Medical consultation made easy.
+region: h2
+;; font-family: serif
+style: bold
+-- end: ftd.column
+-- ftd.column:
+
+-- buttons.button: Consult
+link: https://sayak-bhunia.github.io/navbar_0.1/
+
+-- end: ftd.column
+
+-- end: ftd.column
 
 -- end: ftd.row
+
+-- ftd.row:
+padding.px: 20
+
+-- ftd.image: img-modified.png
 -- end: ftd.row
+-- end: ftd.row
+
+;; ---------------------------------------------------------------------------------
+
+-- end: ftd.column
